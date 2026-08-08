@@ -1,0 +1,86 @@
+.weather-widget {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.weather-widget:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.weather-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-icon {
+  font-size: 18px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-temp {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.weather-desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: capitalize;
+}
+
+.weather-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.weather-details span {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.weather-loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.06);
+  border-top-color: #7c6bf5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.weather-widget.loading {
+  min-width: 36px;
+  justify-content: center;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 992px) {
+  .weather-widget {
+    display: none;
+  }
+}

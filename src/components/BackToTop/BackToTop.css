@@ -1,0 +1,32 @@
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 999;
+  box-shadow: 0 4px 20px var(--shadow-primary);
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 8px 30px var(--shadow-secondary);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

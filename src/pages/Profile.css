@@ -1,0 +1,471 @@
+/* Profile Page - Complete Dark Theme */
+.profile-page {
+  padding: 40px 0;
+  min-height: 80vh;
+  background: #0d0d1a;
+}
+
+.profile-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Back Button */
+.profile-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  padding: 8px 0;
+}
+
+.profile-back:hover {
+  color: #a78bfa;
+  transform: translateX(-4px);
+}
+
+/* Profile Header */
+.profile-header {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  padding: 30px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.profile-header:hover {
+  border-color: rgba(124, 58, 237, 0.1);
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.2);
+}
+
+.profile-status h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+}
+
+.profile-status p {
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Profile Stats */
+.profile-stats-mini {
+  display: flex;
+  gap: 35px;
+}
+
+.stat-mini {
+  text-align: center;
+}
+
+.stat-mini .stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-mini .stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* Profile Tabs */
+.profile-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 6px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.tab-btn {
+  padding: 10px 22px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+  justify-content: center;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+}
+
+/* Profile Content */
+.profile-content {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 30px;
+  min-height: 300px;
+}
+
+/* Profile Details */
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.detail-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.detail-item label {
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Games History */
+.games-history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.game-history-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.game-history-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(124, 58, 237, 0.05);
+}
+
+.game-history-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.game-history-info {
+  flex: 1;
+}
+
+.game-history-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+  color: #ffffff;
+}
+
+.game-history-info span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.game-history-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+/* Favorites Empty State */
+.favorites-empty-state {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.favorites-empty-state .empty-icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.favorites-empty-state h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.favorites-empty-state p {
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.favorites-empty-state .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.favorites-empty-state .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* Settings */
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-item label {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  border-radius: 26px;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+}
+
+.toggle-switch input:checked + .toggle-slider::before {
+  transform: translateX(22px);
+}
+
+/* Logout Button */
+.logout-btn {
+  padding: 14px;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.1);
+  border-radius: 12px;
+  color: #ef4444;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .profile-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .profile-avatar {
+    flex-direction: column;
+  }
+
+  .profile-stats-mini {
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .profile-tabs {
+    gap: 4px;
+    padding: 4px;
+  }
+
+  .tab-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+    flex: 1;
+  }
+
+  .tab-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-page {
+    padding: 20px 0;
+  }
+
+  .profile-header {
+    padding: 20px 16px;
+  }
+
+  .avatar-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .profile-status h2 {
+    font-size: 20px;
+  }
+
+  .profile-stats-mini {
+    gap: 18px;
+  }
+
+  .stat-mini .stat-value {
+    font-size: 20px;
+  }
+
+  .profile-content {
+    padding: 20px 16px;
+  }
+
+  .game-history-item {
+    padding: 12px 14px;
+  }
+
+  .game-history-icon {
+    font-size: 22px;
+  }
+
+  .game-history-info h4 {
+    font-size: 14px;
+  }
+
+  .setting-item {
+    padding: 12px 0;
+  }
+
+  .setting-item label {
+    font-size: 14px;
+  }
+
+  .profile-back {
+    font-size: 13px;
+  }
+
+  .favorites-empty-state h4 {
+    font-size: 18px;
+  }
+}
